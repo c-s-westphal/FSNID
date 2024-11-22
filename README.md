@@ -18,9 +18,13 @@ This repository contains the code used to generate the results presented in the 
 
 ## Introduction
 
-In this repo we publish the code used to create the results in Feature Selection for Network Intrusion Detection (FSNID). FSNID, is an information-theoretic filter method that sequentially selects features that transfer entropy to the target, as shown in the following schematic. [2ndprojchematic2.pdf](https://github.com/user-attachments/files/17850746/2ndprojchematic2.pdf) This in turn lead to us achieving the following main results: 
-[2ndprojbar.pdf](https://github.com/user-attachments/files/17850751/2ndprojbar.pdf)
+In this repo, we publish the code used to create the results in Feature Selection for Network Intrusion Detection (FSNID). FSNID, is an information-theoretic filter method that sequentially eliminates features that fail to transfer entropy to the attack vector, as shown in the following schematic.
+ 
+ ![2ndprojchematic2](https://github.com/user-attachments/assets/ee47cafe-36ac-4ec1-930a-f55d135d0d57)
 
+This in turn led to us achieving the following main results:
+
+![2ndprojbar](https://github.com/user-attachments/assets/96225887-6e96-425f-a863-4ef18983bb93)
 
 
 ## Installation
@@ -53,11 +57,11 @@ Run the feature selection and classification script using:
 
 - `--nme`: Name of the dataset to use (default: `BOTIOT`).
 - `--selection_method`: Feature selection method to use. Choices are `fsnid`, `brown`, `firefly`, `lasso`, `pi` (default: `fsnid`).
-- `--model_type`: Type of model to evaluate the features with. Choices are `MLP`, `LSTM`, `TCN`, `GRU` (default: `MLP`).
+- `--model_type`: Type of model to evaluate the features with. Only FSNID is designed to be used with all four, other methods should be left to default to MLP. Choices are `MLP`, `LSTM`, `TCN`, `GRU` (default: `MLP`).
 
 ## Datasets
 
-Due to GitHub's file size limitations, the full datasets are not included in this repository. However, the first 5000 rows of the **BOTIOT** dataset are provided in the `/data` directory to demonstrate the required data format.
+Due to GitHub's file size limitations, the full datasets are not included in this repository. However, the first 5000 rows of the **BOTIOT** dataset are provided in the `/data` directory to demonstrate the required format.
 
 For the complete datasets, please visit:
 
@@ -71,7 +75,7 @@ For the complete datasets, please visit:
 
 ## Citation
 
-If you use this code or dataset in your research, please cite our paper:
+If you use this code in your research, please cite our paper:
 
 ```bibtex
 @misc{westphal2024featureselectionnetworkintrusion,
