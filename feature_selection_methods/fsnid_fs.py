@@ -74,7 +74,7 @@ class fsnid_selection:
         """
         if self.model_type in ['LSTM', 'GRU', 'TCN']:
             # Use mine_fa_td with the specified model_type
-            miner = mine_td(
+            miner = mine_fa_td(
                 p_dis=features,
                 q_dis=targets,
                 num_iterations=self.num_iterations,
@@ -82,7 +82,7 @@ class fsnid_selection:
             )
         else:
             # Use mine_fa as the default
-            miner = mine(
+            miner = mine_fa(
                 p_dis=features,
                 q_dis=targets,
                 num_iterations=self.num_iterations
