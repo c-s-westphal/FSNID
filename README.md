@@ -4,9 +4,9 @@
 This repository contains the code used to generate the results presented in the paper:
 
 > **Feature Selection for Network Intrusion Detection**  
-> *[Charles Westphal], et al.*  
-> [arXiv:2411.11603](https://arxiv.org/abs/2411.11603)
-> To appear in KDD'25.
+> *[Charles Westphal](https://c-s-westphal.github.io/), et al.*
+> In Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD 2025}
+> [Link to the paper](https://dl.acm.org/doi/10.1145/3690624.3709339)
 
 ## Table of Contents
 
