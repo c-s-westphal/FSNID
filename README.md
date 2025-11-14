@@ -78,12 +78,11 @@ For the complete datasets, please visit:
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@misc{westphal2024featureselectionnetworkintrusion,
-      title={Feature Selection for Network Intrusion Detection}, 
-      author={Charles Westphal and Stephen Hailes and Mirco Musolesi},
-      year={2024},
-      eprint={2411.11603},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2411.11603}, 
+@inproceedings{WHM25:feature,
+author = {Westphal, Charles and Hailes, Stephen and Musolesi, Mirco},
+title = {{Feature Selection for Network Intrusion Detection}}, 
+year = {2025}, 
+booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD 2025}, 
+location = {Toronto, Canada}
 }
+
